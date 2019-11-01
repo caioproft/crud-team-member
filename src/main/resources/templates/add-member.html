@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://wwww.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/form.css}" rel="stylesheet">
+        <title>Adicionar membro</title>
+    </head>
+    <body>
+        <main>
+
+            <form method="post" th:action="@{/add-member}" th:object="${member}">
+
+                <label for="name"> Nome do colaborador </label>
+                <input type="text" id="name"  th:field="*{name}" placeholder="Digite o nome do membro" required/>
+
+                <p>Time do novo colaborador</p>
+                <select th:field = "*{team}" required>
+                    <option value="">Escolha o time do colaborador</option>
+                    <option th:each = "team : ${teams}") th:text = "${team.name}" th:value = "${team.id}"></option>
+                </select>
+
+                <input type="submit" value="Cadastrar colaborador" class="enviar">
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: #003242;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-center: center;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+    color: #00c689;
+    font-family: Merriweather Sans,sans-serif;
+}
+
+button{
+    text-align: center;
+    font-size:20px;
+    padding: 12px 28px;
+    background-color: #003242;
+    color: #00c689;
+    border: 1px solid #00c689;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #00c689;
+    color: #003242;
+    transform: scale(1.1);
+}
+
+#buttom1{
+    padding-right: 400px;
+    padding-left: 350px;
+    text-align: center;
+}
+#buttom2{
+    padding-right: 400px;
+    padding-left: 350px;
+    text-align: center;
+
+}
+.seletor{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}

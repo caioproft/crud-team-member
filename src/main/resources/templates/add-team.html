@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/form.css}" rel="stylesheet">
+        <title>Criar novo time</title>
+    </head>
+    <body>
+        <main>
+
+            <form method="post" th:action="@{/add-team}" th:object="${team}">
+
+                <label for="name"> Nome do time</label>
+                <input type="text" id="name"  th:field="*{name}" placeholder="Digite o nome do time" required/>
+
+                <input type="submit" value="Cadastrar time" class="enviar">
+             </form>
+        </main>
+    </body>
+</html>

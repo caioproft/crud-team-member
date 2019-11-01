@@ -1,0 +1,82 @@
+body{
+    background-color: #003242;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: #00c689;
+}
+
+form input, form select{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+    color: #00c689;
+    background-color: #003242;
+    border: 1px solid #00c689;
+}
+
+form input{
+    cursor: text;
+}
+
+form select{
+    width: 54.3%;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 7%;
+}
+
+.enviar:hover, input:hover, select:hover{
+    background-color: #00c689;
+    color: #003242;
+}
+
+.enviar:hover{
+    transform: scale(1.1);
+}
+
+::-webkit-input-placeholder {
+   color: #00c689;
+}
+
+
+:-moz-placeholder {
+   color: #00c689;
+}
+
+::-moz-placeholder {
+   color: #00c689;
+}
+
+:-ms-input-placeholder{
+   color: #00c689;
+}

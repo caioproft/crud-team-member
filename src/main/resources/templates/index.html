@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/index.css}" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>Invillia - Gerenciamento de times e colaboradores</title>
+    </head>
+    <body>
+        <style>
+            .mesmo-tamanho{
+                width: 130%;
+                white-space: normal;
+            }
+        </style>
+        <div class="seletor">
+            <p>Sistema de gerenciamento de times e colaboradores da Invillia</p>
+            <div id="container">
+                <div id="buttom1">
+                    <button type="button" class="btn btn-primary mesmo-tamanho" onclick="window.location.href ='/manager-teams';">
+                        <i class="fas fa-users"></i>
+                        Gerenciar times
+                    </button>
+                </div>
+                <br>
+                <div id="buttom2">
+                    <button type="button" class="btn btn-primary mesmo-tamanho" onclick="window.location.href = '/manager-members';">
+                        <i class="fas fa-user-plus"></i>
+                        Gerenciar colaboradores
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

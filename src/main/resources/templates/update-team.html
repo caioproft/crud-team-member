@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/form.css}" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <form  action="#" th:action="@{/update-team/{id}(id=${team.id})}" th:object="${team}" method="post">
+
+                <label for="name">Atualizar nome do time </label>
+                <input type = "text"  id="name" th:field="*{name}" placeholder="Nome da equipe" required/>
+
+                <input type="submit" value="Atualizar time" class="enviar">
+
+            </form>
+        </main>
+    </body>
+</html>

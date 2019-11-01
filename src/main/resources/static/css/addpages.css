@@ -1,0 +1,30 @@
+body{
+    background-color: #003242;
+}
+button{
+    font-size:5px;
+    background-color: #003242;
+    color: #00c689;
+    border: 1px solid #00c689;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #00c689;
+    color: #003242;
+    transform: scale(1.1);
+}
+td{
+    color: #003242;
+}
+thead{
+    background-color: #003242;
+}
+
+th{
+    color: #00c689;
+}
+
+
+
+
